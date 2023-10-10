@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 10px;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/background1.png');
+}
+
+
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+
+#taryns-news, #api-button {
+  background-color:blanchedalmond;
+  padding:10px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.border-main {
+  border-style:ridge;
+  border-color: #723d46;
+  padding: 20px;
+  background-color:blanchedalmond;
+}
+
+#main-header {
+  font-size: 65px;
+  color: #472d30;
+  animation-name: glow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+#intro {
+  color: #723d468c;
+  font-size: 18px;
+}
+
+#job-description {
+  color: #723d46c0;
+  font-style: oblique;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(132, 121, 150, 1);
+  }
+  to {
+    text-shadow: 0 0 12px rgba(132, 121, 150, 0.5),
+      1px 0 12px rgba(132, 121, 150, 0.5), 0 1px 12px rgba(132, 121, 150, 0.5),
+      1px 1px 12px rgba(132, 121, 150, 0.5);
+  }
+}
+
+  .skills {
+    width: 350px;
+    margin-left: 200px;
+    padding-bottom: 2px;
+    border-style: ridge;
+    border-color: #723d46;
+  }
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #main-header {
+    font-size: 40px;
+  }
+
+  .navBar {
+    font-size: 16px;
+  }
+
+  .skills{
+
+    width:200px;
+  }
+}
