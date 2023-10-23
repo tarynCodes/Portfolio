@@ -1,12 +1,25 @@
 import React from 'react'
+import { useState } from 'react';
 
 function NavBar() {
-  return (
+  const [isNavVisible, setNavVisibility] = useState(true);
+
+  const toggleNav = () => {
+    setNavVisibility(!isNavVisible);
+  };
+  return    <nav className={`nav ${isNavVisible ? '' : 'hidden-links'}`}>
+    <ul className="navList">
     <li className='navBar'>
-     <button id='api-button'>API project</button>
-     <button id='taryns-news'>Taryn's News </button>
+    <a href='/' className='taryn'>Taryn Bilsborough</a>
+      <a href='/projects' className="projects">Projects</a>
+      <a href='/about' className="about">About</a>
     </li>
-  )
+    <div className="nav">
+    <button className='menu-button' onClick={toggleNav}></button>
+    </div>
+    </ul>
+
+  </nav>
 }
 
 export default NavBar
