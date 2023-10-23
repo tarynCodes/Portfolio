@@ -12,13 +12,13 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url('./assets/background1.png');
-  min-height: 125vh;
+  min-height: 100vh;
 }
 
 
 .navBar {
   display:flex;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
     background-color:rgba(255, 235, 205, 0.757);
     box-sizing: border-box;
     position:fixed;
@@ -26,6 +26,7 @@ body {
     left:0;
     right:0;
     width:100%;
+    margin-left: 6%;
 }
 
 .navList{
@@ -37,7 +38,7 @@ body {
   top:0;
   left:0;
   right:0;
-  width:100%;
+  width:90%;
 }
 
 
@@ -160,8 +161,14 @@ body {
     font-size: 32px; 
   }
 
+  .navBar{
+    display: flex;
+    justify-content:flex-end
+  }
+
   .about, .projects, .taryn {
-    font-size: 16px;
+    font-size: 15px;
+
   }
 
   #intro {
@@ -170,5 +177,11 @@ body {
 
   #job-description {
     font-size: 14px;
+  }
+
+  .menu-button{
+    display: flex;
+    justify-content: flex-start;
+
   }
 }

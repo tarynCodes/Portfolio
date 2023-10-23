@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   const [isNavVisible, setNavVisibility] = useState(true);
@@ -7,19 +8,26 @@ function NavBar() {
   const toggleNav = () => {
     setNavVisibility(!isNavVisible);
   };
-  return    <nav className={`nav ${isNavVisible ? '' : 'hidden-links'}`}>
-    <ul className="navList">
-    <li className='navBar'>
-    <a href='/' className='taryn'>Taryn Bilsborough</a>
-      <a href='/projects' className="projects">Projects</a>
-      <a href='/about' className="about">About</a>
-    </li>
-    <div className="nav">
-    <button className='menu-button' onClick={toggleNav}></button>
-    </div>
-    </ul>
-
-  </nav>
+  return (
+    <nav className={`nav ${isNavVisible ? '' : 'hidden-links'}`}>
+      <ul className="navList">
+        <div className="nav">
+          <button className="menu-button" onClick={toggleNav}></button>
+        </div>
+        <li className="navBar">
+          <Link to="/" className="taryn">
+            Taryn Bilsborough
+          </Link>
+          <Link to="/projects" className="projects">
+            Projects
+          </Link>
+          <Link to="/about" className="about">
+            About
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
 export default NavBar
