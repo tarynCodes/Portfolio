@@ -54,9 +54,9 @@ body {
 }
 
 .menu-button{
-  background-image: url('./assets/hamburger_button_menu_icon_155296.png');
-  width:35px;
-  height:35px;
+  background-image: url('./assets/hidden-button.png');
+  width: 40px;
+  height:40px;
   margin-left: 2%;
   margin-top: 0.3%;
 }
