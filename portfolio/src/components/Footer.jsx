@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <div className='footer'>
+        <h4> Designed and Developed by Taryn Bilsborough 2023</h4>
           <Link to="https://github.com/tarynCodes" target="_blank" className='github'>
       <img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' className='github'/>
       </Link>

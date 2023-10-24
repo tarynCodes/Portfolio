@@ -116,14 +116,23 @@ body {
 .github {
   width: 55px;
   height: 50px;
-  margin-left: 2px;
+  margin-top: 2px;
+  margin-left:10px
 }
 
 .linkedin {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   background-color: antiquewhite;
-  margin-left: 8px;
+  margin-top: 4px;
+  margin-left: 12px;
+
+}
+
+#northcoders{
+  text-decoration: none;
+  color:orangered;
+  font-weight: bold;
 }
 
 @keyframes glow {
@@ -148,12 +157,17 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-
   margin-top: 30px;
   background-color: blanchedalmond;
   border-style: ridge;
   border-color: #61383f;
   text-align: center;
+  color:#472d30;
+  font-size: 18px;
+  max-width: 2000px;
+  max-height: 1000px;
+  transform: translate(0px, -60px);
+
 }
 
 .heading-about {
@@ -165,7 +179,13 @@ body {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+#toolkit{
+  text-decoration: overline;
+  padding-top: 2px;
 }
 
 @media (max-width: 768px) {
