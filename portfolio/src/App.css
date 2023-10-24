@@ -1,5 +1,5 @@
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Sen', sans-serif;
 }
 
 body {
@@ -188,6 +188,36 @@ body {
   padding-top: 2px;
 }
 
+.projects-box{
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  padding:2px;
+  text-align:center;
+  transform: translate(0px, -100px);
+  color: #472d30;
+}
+
+#ncnews{
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  padding:20px;
+  transform: translate(-500px, -30px);
+}
+
+#newsImage{
+  height:250px;
+  width:500px;
+}
+
+#links-ncnews, #live-ncnews, #github-ncnews{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2px;
+  color: #472d30;
+}
 @media (max-width: 768px) {
   body {
     flex-direction: column;
