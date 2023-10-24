@@ -1,5 +1,6 @@
 import React from 'react'
 import NcNews from './NcNews'
+import Api from './Api'
 
 function Projects() {
   return (
@@ -10,7 +11,9 @@ function Projects() {
         </section>
     <section>
         <NcNews/>
+        <Api/>
     </section>
+
     </div>
   )
 }

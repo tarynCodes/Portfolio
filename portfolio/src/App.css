@@ -108,7 +108,7 @@ body {
   box-sizing: border-box;
   background-color: rgba(255, 235, 205, 0.757);
   padding: 4px;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   right: 0;
@@ -193,7 +193,7 @@ body {
   background-color: blanchedalmond;
   padding:2px;
   text-align:center;
-  transform: translate(0px, -100px);
+  transform: translate(0px, 100px);
   color: #472d30;
 }
 
@@ -201,15 +201,23 @@ body {
   box-sizing: border-box;
   background-color: blanchedalmond;
   padding:20px;
-  transform: translate(-500px, -30px);
+  transform: translate(-500px, 160px);
 }
 
-#newsImage{
+#news-api{
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  padding:20px;
+  transform: translate(400px, -300px);
+
+}
+
+#newsImage, #apiImage{
   height:250px;
   width:500px;
 }
 
-#links-ncnews, #live-ncnews, #github-ncnews{
+#links-ncnews, #live-ncnews, #github-ncnews, #links-api, #live-api, #github-api{
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
