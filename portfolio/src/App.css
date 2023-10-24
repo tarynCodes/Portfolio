@@ -93,16 +93,29 @@ body {
   font-style: oblique;
 }
 
+.footer{
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color:rgba(255, 235, 205, 0.757);
+  padding:4px;
+  position:absolute;
+left:0;
+bottom:0;
+right:0;
+}
 .github{
-  background-image: url("./assets/github.jpg");
-  width:50px;
+  width:55px;
   height: 50px;
+  margin-left: 2px;
+ 
 }
 
 .linkedin{
-  background-image: url("./assets/linked-in.png");
   width:50px;
-  height:50px;
+  height: 50px;
+  background-color: antiquewhite;
+  margin-left:8px;
 }
 
 @keyframes glow {
