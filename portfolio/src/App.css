@@ -52,9 +52,11 @@ body {
 }
 
 .menu-button {
-  background-image: url("./assets/hidden-button.png");
-  width: 40px;
-  height: 40px;
+ background-color: rgba(255, 235, 205, 0.757);
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  padding-right: 10px;
   margin-left: 2%;
   margin-top: 0.3%;
 }
@@ -229,12 +231,13 @@ body {
   body {
     flex-direction: column;
     text-align: center;
+    height:130vh;
+    padding-bottom: 40px;
   }
 
   #footer-sign{
     font-size: 8px;
   }
-
 
 
   .border-main{
@@ -261,6 +264,33 @@ body {
 @media (max-width: 768px) {
   #main-header {
     font-size: 32px;
+  }
+
+  .projects-box {
+    font-size: 10px;
+    width:200px;
+    height:100px;
+    align-items: center;
+    transform: translate(60px, 0px);
+  }
+
+  #ncnews {
+    width:300px;
+    height:300px;
+    font-size:10px;
+    transform: translate(0px, 30px);
+  }
+
+  #news-api {
+    width:300px;
+    height:300px;
+    font-size:10px;
+    transform: translate(0px, 60px);
+  }
+
+  #newsImage, #apiImage{
+    height:125px;
+    width:250px;
   }
 
   .navBar {
@@ -297,5 +327,8 @@ body {
   .github {
     width: 30px;
     height: 30px;
+  }
+  .about-section{
+    font-size: 10px;
   }
 }
