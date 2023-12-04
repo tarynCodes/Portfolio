@@ -1,28 +1,18 @@
+
 * {
   font-family: 'Sen', sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("./assets/background1.png");
-  min-height: 100vh;
 }
 
 .navBar {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgba(255, 235, 205, 0.757);
+  background-color: rgb(255, 235, 205);
   box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  margin-left: 6%;
 }
 
 .navList {
@@ -36,6 +26,16 @@ body {
   right: 0;
   width: 90%;
 }
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darksalmon;
+  min-height: 100vh;
+}
+
 
 .about,
 .projects,
@@ -196,6 +196,7 @@ body {
   text-align:center;
   transform: translate(0px, 100px);
   color: #472d30;
+  z-index: 1;
 }
 
 #ncnews{
@@ -227,7 +228,7 @@ body {
   padding-top: 2px;
   color: #472d30;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     flex-direction: column;
     text-align: center;
@@ -261,7 +262,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   #main-header {
     font-size: 32px;
   }
@@ -296,7 +297,6 @@ body {
   .navBar {
     display: flex;
     justify-content: center;
-    margin-left: 13%;
   }
 
   .about,

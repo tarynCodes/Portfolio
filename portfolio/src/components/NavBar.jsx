@@ -1,7 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import menuButton from '../assets/menu-button.png'
+
+
+
 
 function NavBar() {
   const [isNavVisible, setNavVisibility] = useState(true);
@@ -12,9 +14,6 @@ function NavBar() {
   return (
     <nav className={`nav ${isNavVisible ? '' : 'hidden-links'}`}>
       <ul className="navList">
-        <div className="nav">
-          <button className="menu-button" onClick={toggleNav}><img src={menuButton}/></button>
-        </div>
         <li className="navBar">
           <Link to="/" className="taryn">
             Taryn Bilsborough
