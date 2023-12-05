@@ -2,11 +2,11 @@
 * {
   font-family: 'Sen', sans-serif;
 }
-
 body{
-  margin:0;
-  padding: 0;
+  margin: 0;
+  padding:0;
 }
+
 
 
 .navBar {
@@ -140,39 +140,47 @@ a
   padding-top: 2px;
 }
 
-.projects-box{
+.projects-container{
   
   text-align:center;
   color: #472d30;
+  background-color: #fcd5ce;
+  padding-top:100px;
+
 }
 
-#ncnews{
-  text-align: center;
-  padding:20px;
-  
-  
+#project-header{
+  margin-left:-180px;
+}
+
+#news-description, #api-description {
+  text-align: left;
+  margin-top: 200px;
+  margin-left: 1100px;
+}
+
+#newsImage, #apiImage {
+  height: 250px;
+  width: 500px;
+  margin-left: -300px;
+  margin-top: -300px
 }
 
 #news-api{
-  text-align: center;
-  padding:20px;
-
+  padding-bottom:100px;
 }
 
-#newsImage, #apiImage{
-  height:250px;
-  width:500px;
-  
-}
-
-#links-ncnews, #live-ncnews, #github-ncnews, #links-api, #live-api, #github-api{
-  text-decoration: none;
+ #live-ncnews, #github-ncnews, #live-api, #github-api{
+  border-style:solid;
   font-size: 20px;
   font-weight: bold;
-  display: flex;
-  justify-content: space-evenly;
   padding-top: 2px;
   color: #472d30;
+}
+
+#links-ncnews, #links-api{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
