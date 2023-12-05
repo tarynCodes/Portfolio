@@ -1,33 +1,28 @@
-import React from 'react'
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-
-
-
-
 function NavBar() {
-  const [isNavVisible, setNavVisibility] = useState(true);
-
-  const toggleNav = () => {
-    setNavVisibility(!isNavVisible);
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
+
   return (
-    <nav className={`nav ${isNavVisible ? '' : 'hidden-links'}`}>
+    <nav className="nav">
       <ul className="navList">
         <li className="navBar">
-          <Link to="/" className="taryn">
+          <a className="taryn"href="#header" onClick={() => scrollToSection("header")}>
             Taryn Bilsborough
-          </Link>
-          <Link to="/projects" className="projects">
-            Projects
-          </Link>
-          <Link to="/about" className="about">
+          </a>
+          <a className="about" href="#about" onClick={() => scrollToSection("about")}>
             About
-          </Link>
+          </a>
+          <a className="projects"href="#projects" onClick={() => scrollToSection("projects")}>
+            Projects
+          </a>
         </li>
       </ul>
     </nav>
   );
 }
 
-export default NavBar
+export default NavBar;

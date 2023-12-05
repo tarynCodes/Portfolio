@@ -3,112 +3,76 @@
   font-family: 'Sen', sans-serif;
 }
 
+body{
+  margin:0;
+  padding: 0;
+}
+
+
 .navBar {
   display: flex;
-  justify-content: space-evenly;
-  background-color: rgb(255, 235, 205);
+  justify-content:space-evenly;
+  background-color:#fcd5ce;
   box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  z-index: 10;
 }
 
-.navList {
-  padding: 0;
-}
-
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 90%;
-}
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: darksalmon;
-  min-height: 100vh;
-}
-
-
-.about,
-.projects,
-.taryn {
-  padding: 15px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bolder;
-  color: #61383f;
-}
-
-.nav.hidden-links .navList .navBar a {
-  display: none;
-}
-
-.menu-button {
- background-color: rgba(255, 235, 205, 0.757);
-  align-items: center;
-  width: 42px;
-  height: 42px;
-  padding-right: 10px;
-  margin-left: 2%;
-  margin-top: 0.3%;
+a
+{
+ text-decoration: none;
+ font-size: larger;
+ color: #472d30;
+ font-weight: bold;
+ z-index: 1000;
 }
 
 .border-main {
-  border-style: ridge;
-  border-color: #723d46;
-  padding: 75px;
-  background-color: blanchedalmond;
   text-align: center;
   margin: -220px auto 0 auto;
+  background-color: #fcd5ce;
+  padding-bottom:5%;
 }
 
 .self-pic {
-  height: 200px;
-  width: 150px;
-  box-sizing: border-box;
-  border-style: ridge;
-  border-color: #723d46;
-  transform: translate(460px, -90px);
+  height:400px;
+  transform: translate(500px, 400px);
+  z-index:1;
+
 }
 
 #main-header {
   font-size: 75px;
   color: #472d30;
-  animation-name: glow;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  transform: translate(-200px, 0px)
 }
 
 #intro {
   color: #723d468c;
   font-size: 25px;
-  margin: 0;
-  padding: 0;
+  transform: translate(-340px, 0px)
 }
 
 #job-description {
   color: #723d46;
   font-size: 25px;
-  font-style: oblique;
   margin: 0 auto;
-  max-width: 400px;
+ max-width: 700px;
+ text-align: left;
+ transform: translate(-30px, 0px)
 }
 
 .footer {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  background-color: rgba(255, 235, 205, 0.757);
+  background-color:#f9dcc4;
   padding: 4px;
   position: fixed;
   left: 0;
@@ -132,20 +96,11 @@ body {
 
 #northcoders{
   text-decoration: none;
-  color:orangered;
+  color:blanchedalmond;
   font-weight: bold;
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px rgba(132, 121, 150, 1);
-  }
-  to {
-    text-shadow: 0 0 12px rgba(132, 121, 150, 0.5),
-      1px 0 12px rgba(132, 121, 150, 0.5), 0 1px 12px rgba(132, 121, 150, 0.5),
-      1px 1px 12px rgba(132, 121, 150, 0.5);
-  }
-}
+
 .skills {
   display: flex;
   margin-left: 23%;
@@ -154,69 +109,60 @@ body {
   margin: 0 auto;
 }
 
-.about-section {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  margin-top: 30px;
-  background-color: blanchedalmond;
-  border-style: ridge;
-  border-color: #61383f;
-  text-align: center;
-  color:#472d30;
-  font-size: 18px;
-  max-width: 2000px;
-  max-height: 1000px;
-  transform: translate(0px, -60px);
-
+.about-section{
+  background-color:#ffb5a7; 
 }
 
+
 .heading-about {
+  padding:0;
+  margin:0;
   text-align: center;
-  padding: 1px;
+  color: #472d30;
+  padding-top: 100px;
+
 }
 
 .text-about {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+  background-color: #ffb5a7;
+  text-align: left;
+  margin:0;
+  margin-left: 500px;
+  margin-right: 500px;
   padding: 20px;
-  line-height: 1.5;
+  line-height: 2;
+  
 }
 
 #toolkit{
   text-decoration: overline;
+  text-align: center;
   padding-top: 2px;
 }
 
 .projects-box{
-  box-sizing: border-box;
-  background-color: blanchedalmond;
-  padding:2px;
+  
   text-align:center;
-  transform: translate(0px, 100px);
   color: #472d30;
-  z-index: 1;
 }
 
 #ncnews{
-  box-sizing: border-box;
-  background-color: blanchedalmond;
+  text-align: center;
   padding:20px;
-  transform: translate(-500px, 160px);
+  
+  
 }
 
 #news-api{
-  box-sizing: border-box;
-  background-color: blanchedalmond;
+  text-align: center;
   padding:20px;
-  transform: translate(400px, -300px);
 
 }
 
 #newsImage, #apiImage{
   height:250px;
   width:500px;
+  
 }
 
 #links-ncnews, #live-ncnews, #github-ncnews, #links-api, #live-api, #github-api{
@@ -228,7 +174,91 @@ body {
   padding-top: 2px;
   color: #472d30;
 }
-@media (max-width: 800px) {
+
+
+@media screen and (max-width: 768px) {
+  
+  .navBar a {
+  font-size: 15px;
+  }
+
+  .self-pic {
+    display: none;
+  }
+
+  .border-main {
+    margin: 0;
+    padding: 5%;
+  }
+
+  #main-header {
+    font-size: 40px;
+    transform: translate(0, 0)
+  }
+
+  #intro {
+    transform: translate(0, 0);
+  }
+
+  #job-description {
+    transform: translate(0, 0);
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .skills {
+    margin: 0;
+    width: 100%;
+  }
+
+  .text-about {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .projects-box {
+    transform: translate(0, 0);
+  }
+
+  #ncnews {
+    font-size:10px;
+    
+  }
+
+  #newsImage, #apiImage{
+    height:170px;
+    width:300px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color:#f9dcc4;
+    padding: 0px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  #footer-sign{
+    font-size: 8px;
+  }
+
+  .linkedin {
+    width: 20px;
+    height: 20px;
+  }
+  .github {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* @media (max-width: 800px) {
   body {
     flex-direction: column;
     text-align: center;
@@ -272,21 +302,21 @@ body {
     width:200px;
     height:100px;
     align-items: center;
-    transform: translate(60px, 0px);
+    
   }
 
   #ncnews {
     width:300px;
     height:300px;
     font-size:10px;
-    transform: translate(0px, 30px);
+    
   }
 
   #news-api {
     width:300px;
     height:300px;
     font-size:10px;
-    transform: translate(0px, 60px);
+   
   }
 
   #newsImage, #apiImage{
@@ -331,4 +361,4 @@ body {
   .about-section{
     font-size: 10px;
   }
-}
+} */

@@ -4,7 +4,7 @@ import Api from './Api'
 
 function Projects() {
   return (
-    <div >
+    <div id="projects">
         <section className='projects-box'>
         <h1>Current Projects</h1>
         <h2>Skills grow, so will this portfolio.</h2>
