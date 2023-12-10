@@ -1,6 +1,7 @@
 
 * {
   font-family: 'Sen', sans-serif;
+  box-sizing: border-box;
 }
 body{
   margin: 0;
@@ -18,7 +19,7 @@ body{
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 100vh;
   padding-top: 1%;
   padding-bottom: 1%;
   z-index: 10;
@@ -185,14 +186,24 @@ a
 
 
 @media screen and (max-width: 768px) {
+
+  body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 40px;
+  }
   
-  .navBar a {
-  font-size: 15px;
+  .navBar, a {
+    font-size: 12px;
+    padding:0%;
+  
   }
 
   .self-pic {
-    display: none;
-  }
+    height: 200px;
+  width: 150px; 
+  transform: translate(0, 0)}
 
   .border-main {
     margin: 0;
@@ -232,13 +243,9 @@ a
 
   #ncnews {
     font-size:10px;
-    
+    transform: translate(0, 0);
   }
 
-  #newsImage, #apiImage{
-    height:170px;
-    width:300px;
-  }
 
   .footer {
     display: flex;
@@ -264,109 +271,21 @@ a
     width: 30px;
     height: 30px;
   }
+
+  #news-description, #api-description {
+    margin-left: 30px;
+    margin-bottom: -150px;
+  }
+
+
+  #newsImage, #apiImage {
+    height: 200px;
+    width: 300px;
+    margin-left: 0px;
+    margin-top: -400px
+  }
+
+  
 }
 
-/* @media (max-width: 800px) {
-  body {
-    flex-direction: column;
-    text-align: center;
-    height:130vh;
-    padding-bottom: 40px;
-  }
 
-  #footer-sign{
-    font-size: 8px;
-  }
-
-
-  .border-main{
-    max-width: 200px;
-    margin: -70px auto 0 auto;
-  }
-  .self-pic {
-    display: none;
-  }
-
-  #main-header {
-    font-size: 40px;
-  }
-
-  .navBar {
-    font-size: 16px;
-  }
-
-  .skills {
-    max-width: 100px;
-  }
-}
-
-@media (max-width: 800px) {
-  #main-header {
-    font-size: 32px;
-  }
-
-  .projects-box {
-    font-size: 10px;
-    width:200px;
-    height:100px;
-    align-items: center;
-    
-  }
-
-  #ncnews {
-    width:300px;
-    height:300px;
-    font-size:10px;
-    
-  }
-
-  #news-api {
-    width:300px;
-    height:300px;
-    font-size:10px;
-   
-  }
-
-  #newsImage, #apiImage{
-    height:125px;
-    width:250px;
-  }
-
-  .navBar {
-    display: flex;
-    justify-content: center;
-  }
-
-  .about,
-  .projects,
-  .taryn {
-    font-size: 12px;
-  }
-
-  #intro {
-    font-size: 14px;
-  }
-
-  #job-description {
-    font-size: 14px;
-  }
-
-  .menu-button {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .footer {
-    padding: 4px;
-  }
-  .linkedin {
-    width: 20px;
-    height: 20px;
-  }
-  .github {
-    width: 30px;
-    height: 30px;
-  }
-  .about-section{
-    font-size: 10px;
-  }
-} */
