@@ -247,6 +247,11 @@ a
     padding-bottom: 10px;
   }
 
+  #project-header {
+    text-align: center;
+    margin:0;
+  }
+
   .projects-container{
     padding:20px;
   }
@@ -266,15 +271,15 @@ a
   }
 
   .linkedin {
-    width: 20px;
-    height: 20px;
-    margin-left:120px;
+    width: 25px;
+    height: 25px;
+    margin-left:75px;
     margin-top: -14px;
   }
   .github {
     width: 30px;
     height: 30px;
-    margin-left:135px;
+    margin-left:92px;
     margin-top: 2px;
   }
 
